@@ -7,7 +7,7 @@ function process(data, grade) {
             lesson = word.lesson;
             html += "</section><section>";
         }
-        html += `<section><h1>${word["item"]}</h1></section>`;
+        html += `<section><p>${word["pinyin"].join(" ")}</p><h1>${word["item"]}</h1></section>`;
     }
     html += "</section>";
     document.getElementById("slides").innerHTML = html;
