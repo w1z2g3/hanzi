@@ -43,7 +43,7 @@ function main() {
         const list = document.createElement('ul');
         for (let i = 1; i < 9; i++) {
             const item = document.createElement('li');
-            item.innerHTML = `<p class="reveal" align="center">第${i}册: <a href="index.html?grade=${i}&pinyin=1">带拼音学习</a> <a href="index.html?grade=${i}">不带拼音测试</a></p>`
+            item.innerHTML = `<p class="reveal" align="center">第${i}册: <a href="index.html?grade=${i}&pinyin=1">学习</a> <a href="index.html?grade=${i}">测试</a></p>`
             list.append(item);
         }
         root.append(list);
